@@ -1,6 +1,6 @@
 # Run
 ```bash
-bash train_grpo.sh # 可fine-tune/lora
+bash train_grpo.sh # 可full fine-tune/lora
 ```
 
 ## 奖励函数
