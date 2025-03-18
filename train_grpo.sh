@@ -23,8 +23,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch --num_processes 8 --confi
     --save_only_model \
     --eval_strategy steps \
     --eval_steps 100 \
-    --gradient_checkpointing \
     --bf16 
+    # --gradient_checkpointing \
     # --use_peft true \
     # --lora_r 16 \
     # --lora_alpha 32 \

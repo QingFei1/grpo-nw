@@ -24,11 +24,6 @@ def extract_xml_answer(text: str) -> str:
     answer = text.split("<answer>")[-1]
     answer = answer.split("</answer>")[0]
     return answer.strip()
-# Extracts gsm8k answers
-def extract_hash_answer(text: str) -> str | None:
-    if "####" not in text:
-        return None
-    return text.split("####")[1].strip().replace(",", "").replace("$", "")
 
 def calculate_similarity(emb_model, prediction, reference):
 
